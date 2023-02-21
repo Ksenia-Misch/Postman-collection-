@@ -1,0 +1,203 @@
+{
+	"info": {
+		"_postman_id": "0b52d1f0-2f47-4459-8cff-f84b4409de29",
+		"name": "petstore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24018038"
+	},
+	"item": [
+		{
+			"name": "POST",
+			"item": [
+				{
+					"name": "Добавить нового питомца в магазин",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 10,\r\n    \"category\": {\r\n        \"id\": 1,\r\n        \"name\": \"animal\"\r\n    },\r\n    \"name\": \"Bulldog\",\r\n    \"photoUrls\": [\r\n        \"https://kids.britannica.com/kids/article/bulldog/471529\"\r\n    ],\r\n    \"tags\": [\r\n        {\r\n            \"id\": 1,\r\n            \"name\": \"#dog\"\r\n        }\r\n    ],\r\n    \"status\": \"available\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/pet",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"pet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "\"Добавить нового питомца в магазин( JSON и c content-typ= XML)\"",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"id\": 10,\r\n\"category\": {\r\n\"id\": 1,\r\n\"name\": \"animal\"\r\n},\r\n\"name\": \"Bulldog\",\r\n\"photoUrls\": [\r\n\"https://kids.britannica.com/kids/article/bulldog/471529\"\r\n],\r\n\"tags\": [\r\n{\r\n\"id\": 1,\r\n\"name\": \"#dog\"\r\n}\r\n],\r\n\"status\": \"available\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/pet",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"pet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Добавить нового питомца в магазин  NULL в теле запроса",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": NULL,\r\n    \"category\": {\r\n        \"id\": 1,\r\n        \"name\": \"animal\"\r\n    },\r\n    \"name\": \"Bulldog\",\r\n    \"photoUrls\": [\r\n        \"https://kids.britannica.com/kids/article/bulldog/471529\"\r\n    ],\r\n    \"tags\": [\r\n        {\r\n            \"id\": 1,\r\n            \"name\": \"#dog\"\r\n        }\r\n    ],\r\n    \"status\": \"available\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/pet",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"pet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Добавить нового питомца в магазин  ( создать ресурс с использованием несуществующего адреса)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 10,\r\n    \"category\": {\r\n        \"id\": 1,\r\n        \"name\": \"animal\"\r\n    },\r\n    \"name\": \"Bulldog\",\r\n    \"photoUrls\": [\r\n        \"https://kids.britannica.com/kids/article/bulldog/471529\"\r\n    ],\r\n    \"tags\": [\r\n        {\r\n            \"id\": 1,\r\n            \"name\": \"#dog\"\r\n        }\r\n    ],\r\n    \"status\": \"available\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/pet1",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"pet1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Добавить нового питомца в магазин  (пустой JSON объект)v",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/pet",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"pet"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GET",
+			"item": [
+				{
+					"name": "Добавить нового питомца в магазин",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"id\": 10,\r\n\"category\": {\r\n\"id\": 1,\r\n\"name\": \"animal\"\r\n},\r\n\"name\": \"Bulldog\",\r\n\"photoUrls\": [\r\n\"https://kids.britannica.com/kids/article/bulldog/471529\"\r\n],\r\n\"tags\": [\r\n{\r\n\"id\": 1,\r\n\"name\": \"#dog\"\r\n}\r\n],\r\n\"status\": \"available\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/pet",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"pet"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
